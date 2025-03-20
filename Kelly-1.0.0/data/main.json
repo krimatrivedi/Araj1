@@ -1,4 +1,83 @@
 {
-    "sitename": "Araj"
-  }
-  
+  "sitename": "STUDIO ARAJ",
+  "navmenu": [
+    { "name": "Home", "link": "index.html" },
+    { "name": "About", "link": "about.html", "active": true },
+    { "name": "Services", "link": "resume.html" },
+    { "name": "Testimonial", "link": "services.html" },
+    { "name": "Contact", "link": "contact.html" }
+  ],
+  "About": {
+    "p-text": "With the experience of 12 years, ARAJ is a brand creation & design studio rooted in INDIA.",
+    "h-text": "Creativity captures Attention.It sparks Imagination. From Big Events to everyday posts",
+    "paragraph1": "We act creative with attention and boldness to discover the potential of your brand. The first rule when creating value through design elements is to ensure they look aesthetically appealing. We believe that harmony has enormous impact and only the precise balance of forms will allow this harmony to emerge.",
+    "paragraph2": "STUDIO ARAJ offers design services in sectors as diverse as Travel & Tourism, Fashion & Beauty, Hospitality, Financial Services, Luxury, Entertainment & Food, Healthcare, Education & things you ask for."    
+  },
+  "hero": {
+    "images": [
+      "assets/img/index/slideshow1.jpg",
+      "assets/img/index/slideshow2.jpg",
+      "assets/img/index/slideshow3.jpg",
+      "assets/img/index/slideshow4.jpg",
+      "assets/img/index/slideshow5.jpg"
+    ]
+  },
+  "testimonials": {
+    "images": [
+      "assets/img/testimonials/testimonials-1.jpg",
+      "assets/img/testimonials/testimonials-2.jpg",
+      "assets/img/testimonials/testimonials-3.jpg",
+      "assets/img/testimonials/testimonials-4.jpg",
+      "assets/img/testimonials/testimonials-5.jpg",
+      "assets/img/testimonials/testimonials-1.jpg"
+    ]
+  },
+  "socials": [
+      { "name": "Twitter", "url": "#", "icon": "bi bi-twitter-x" },
+      { "name": "Facebook", "url": "#", "icon": "bi bi-facebook" },
+      { "name": "Instagram", "url": "https://www.instagram.com/studio_araj/?__d=1%2F", "icon": "bi bi-instagram" },
+      { "name": "LinkedIn", "url": "#", "icon": "bi bi-linkedin" }
+  ],
+  "Resume": [
+    {
+      "title": "BRANDING",
+      "text": "Logo Design | Visiting Card | Letterhead | Envelope | Company Profile | Brochure | ID Card | Presentation Slide | Corporate Gifting"
+    },
+    {
+      "title": "PRODUCT PACKAGING",
+      "text": "Box Packaging | Label / Sticker | Bottle Packaging | Tags | Tube Packaging | Foil Packaging | Sachet Packaging | Tape | Gift Wrap | Paper Bag"
+    },
+    {
+      "title": "STATIONARY",
+      "text": "Diary | Calendar | To-do Lists | Note-pads | Planner | Bookmarks"
+    },
+    {
+      "title": "EVENT & EXHIBITION",
+      "text": "Stall Flex / Banner | Standee Design | Sign-board | Hoarding"
+    },
+    {
+      "title": "OTHERS",
+      "text": "Greeting Card | Poster | Flyer | Book Cover | Menu Card | Magazine | Photo-Album"
+    },
+    {
+      "title": "DIGITAL SERVICES",
+      "text": "Website Development | Web Banner | Content Writing | Newsletter | Birthday Mailer | Festival Mailer"
+    },
+    {
+      "title": "SOCIAL MEDIA",
+      "text": "Festival Post | Post For All Social Media Platforms | Cover Photo | WhatsApp Status | Instagram Story | Youtube Thumbnail"
+    },
+    {
+      "title": "MOTION GRAPHICS",
+      "text": "Corporate Video | Advertisement | Motion Reel | Animated Infographic"
+    },
+    {
+      "title": "PHOTOGRAPHY",
+      "text": "Product Photography | Product Videography | Drone Shoot"
+    },
+    {
+      "title": "WEDDING ESSENTIALS",
+      "text": "Bride-groom Name Logo | Invitation Card | Save The Date Card | Thank You Card | Brides-maid / Groomsmen Card | Welcome Board | Gift Tag | Gift Hamper | Envelope (Favor) | Other Printables"
+    }
+  ]
+}

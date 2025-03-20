@@ -1,0 +1,24 @@
+#sitename{
+    color: #930f06;
+}
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    z-index: -1;
+    background-image: none !important;
+  }
+  
+  .red-text {
+    color: #930f06;
+  }
+
+  .pink-text{
+    color:#ef6363
+  }
