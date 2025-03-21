@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Kelly Bootstrap Template</title>
+  <title>Resume - Kelly Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,86 +26,56 @@
 
   <!-- Main CSS File -->
    <link href="assets/css/main.css" rel="stylesheet">
-   <link href="assets/css/testimonial.css" rel="stylesheet">
-   <link href="assets/css/index.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/index.css" rel="stylesheet">
 </head>
 
-<body class="services-page">
-
+<body class="resume-page">
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename" id="sitename"></h1>
       </a>
-
       <div id="nav-placeholder"></div>
-
       <div id="socials-placeholder"></div>
-
     </div>
   </header>
 
   <main class="main">
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonial</h2>
-        <p class="testimonial-head">
-          <span class="red-text">A Legacy of</span> </p>
-          <span class="pink-text">Successful Partnerships</span>
-        </p>
-        
+        <h2>Service</h2>
       </div><!-- End Section Title -->
-
       <div class="container">
-
-        <div class="row gy-4">
-        <div data-aos="fade-up" data-aos-delay="100" id="testimonials-container" class="row">
-          </div>
-          
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" id="testimonials-container" class="row">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-              </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div id="resume-container">
+              <!-- Dynamic content will be inserted here -->
             </div>
-          </div> -->
-          <!-- End Service Item  -->
-          
-
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Services Section -->
-
+      <!-- Hidden Template -->
+      <template id="resume-template">
+        <div class="resume-item">
+          <h4 class="resume-title"></h4>
+          <ul>
+            <li class="resume-text"></li>
+          </ul>
+        </div>
+      </template>
+    </section><!-- /Resume Section -->
   </main>
 
   <footer id="footer" class="footer light-background">
-
-    <div class="container">
+    <div class="container" id="footer-credits">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Krima</strong> <span>All Rights Reserved<br></span></p>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
+      <div id="socials-placeholder"></div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -137,65 +107,28 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/social.js"></script>
+  <script src="assets/js/nav.js"></script>
   <script>
-    // Load navigation dynamically
-    fetch("nav.html")
-      .then(response => response.text())
-      .then(html => {
-         
-        document.getElementById("nav-placeholder").innerHTML = html;
-        let script = document.createElement("script");
-        script.src = "js/main.js"; // Load main.js after nav is loaded
-        document.body.appendChild(script);
-      })
-      .catch(error => console.error("Error loading navigation:", error));
+
       fetch("data/main.json")
-  .then(response => response.json())
-  .then(data => {
-    if (data.testimonials && data.testimonials.images) {
-      const images = data.testimonials.images;
-      const container = document.getElementById("testimonials-container");
+      .then(response => response.json())
+      .then(data => {
+        if (data.Resume) {
+          const resumeContainer = document.getElementById("resume-container");
+          const template = document.getElementById("resume-template");
 
-      images.forEach((image) => {
-        // Create the column div
-        const colDiv = document.createElement("div");
-        colDiv.className = "col-lg-4 col-md-6  testimonial-div";
-        colDiv.setAttribute("data-aos", "fade-up");
-        colDiv.setAttribute("data-aos-delay", "100");
+          data.Resume.forEach(item => {
+            const resumeClone = template.content.cloneNode(true);
 
-        // Create the service item div
-        const serviceItemDiv = document.createElement("div");
-        serviceItemDiv.className = "service-item item-cyan position-relative";
-        serviceItemDiv.style.backgroundImage = `url('${image}')`;
-        serviceItemDiv.style.backgroundSize = "cover";
-        serviceItemDiv.style.backgroundPosition = "center";
-        serviceItemDiv.style.backgroundRepeat = "no-repeat";
-        serviceItemDiv.style.height = "300px"; // Adjust height if needed
-        serviceItemDiv.style.borderRadius = "10px"; // Optional styling
-        
-        // ✅ Add padding using an inner wrapper
-        const innerDiv = document.createElement("div");
-        innerDiv.style.padding = "20px"; // Adjust padding size
-        innerDiv.style.width = "100%";
-        innerDiv.style.height = "100%";
-        innerDiv.style.background = "rgba(255, 255, 255, 0.2)"; // Optional overlay effect
-        innerDiv.style.borderRadius = "10px"; // Matches parent div for smooth edges
+            resumeClone.querySelector(".resume-title").textContent = item.title;
+            resumeClone.querySelector(".resume-text").textContent = item.text;
 
-        // Create the icon div
-        const iconDiv = document.createElement("div");
-        iconDiv.className = "icon";
+            resumeContainer.appendChild(resumeClone);
+          });
+        }
+      })
+      .catch(error => console.error("Error loading resume data:", error));
 
-        // Append elements
-        serviceItemDiv.appendChild(iconDiv);
-        colDiv.appendChild(serviceItemDiv);
-        container.appendChild(colDiv);
-      });
-    }
-  })
-  .catch(error => console.error("Error loading testimonials images:", error));
-
-
-      
   </script>
 
 </body>

@@ -14,6 +14,7 @@ fetch("data/main.json")
       // Mark the current page as active
       if (item.link === currentPage || (currentPage === "" && item.link === "index.html")) {
         link.classList.add("active");
+        document.title = `${item.name} - ${data.sitename}`; // Change title dynamically
       }
 
       listItem.appendChild(link);
@@ -53,5 +54,10 @@ fetch("data/main.json")
     data.navmenu.forEach(item => {
       navLinks.appendChild(createNavItem(item));
     });
+
+    // Default title if no match
+    if (!document.title.includes("-")) {
+      document.title = `Resume - ${data.sitename}`;
+    }
   })
   .catch(error => console.error("Error loading navigation:", error));

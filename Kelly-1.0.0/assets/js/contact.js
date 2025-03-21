@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    console.log("event", event);
     event.preventDefault(); // Prevent the default form submission
     emailjs.init("bb5iFRYFwrTm0uAoh"); // Replace with your EmailJS Public Key
 
