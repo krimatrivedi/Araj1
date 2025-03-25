@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("nav.html")
+    fetch("../../nav.html")
       .then(response => response.text())
       .then(html => {
         document.getElementById("nav-placeholder").innerHTML = html;
   
         // Load main.js AFTER nav is inserted
         let script = document.createElement("script");
-        script.src = "js/main.js";
+        script.src = "../../js/main.js";
         script.onload = () => {
-          console.log("main.js loaded, now setting up nav.");
           setupNav(); // Run setupNav() ONLY after main.js is fully loaded
         };
         document.body.appendChild(script);

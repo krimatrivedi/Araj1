@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         emailjs.send("service_4hn5z9j", "template_p0ji2hn", formData)
             .then(function (response) {
-                alert("✅ Your message has been sent!");
+                let successMessage = document.querySelector(".sent-message");
+                // Show success message
+                successMessage.style.display = "block";
+
+                // Hide the message after 3 seconds (optional)
+                setTimeout(() => {
+                    successMessage.style.display = "none";
+                }, 3000);
                 document.getElementById("contact-form").reset(); // Clear form after submission
             }, function (error) {
                 alert("❌ Failed to send message. Please try again.");

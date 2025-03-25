@@ -1,8 +1,12 @@
-fetch("data/main.json")
+fetch("../../data/main.json")
   .then(response => response.json())
   .then(data => {
     document.getElementById("sitename").textContent = data.sitename;
     const navLinks = document.getElementById("nav-links");
+    const logoLink = document.querySelector(".logo");
+    if (logoLink) {
+      logoLink.setAttribute("href", data.home_link);
+    }
     const currentPage = window.location.pathname.split("/").pop(); 
 
     function createNavItem(item) {

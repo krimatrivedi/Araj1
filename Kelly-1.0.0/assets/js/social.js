@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("data/main.json") // Load JSON file
+    fetch("../../data/main.json") // Load JSON file
         .then(response => response.json())
         .then(data => {
             const socialsContainer = document.getElementById("socials-placeholder");

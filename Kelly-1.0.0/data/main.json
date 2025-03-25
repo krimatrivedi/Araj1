@@ -1,11 +1,12 @@
 {
   "sitename": "STUDIO ARAJ",
+  "home_link": "/",
   "navmenu": [
-    { "name": "Home", "link": "index.html" },
-    { "name": "About", "link": "about.html", "active": true },
-    { "name": "Services", "link": "services.html" },
-    { "name": "Testimonial", "link": "testimonial.html" },
-    { "name": "Contact", "link": "contact.html" }
+    { "name": "Home", "link": "/" },
+    { "name": "About", "link": "/pages/about/" },
+    { "name": "Services", "link": "/pages/services/" },
+    { "name": "Testimonial", "link": "/pages/testimonial/" },
+    { "name": "Contact", "link": "/pages/contact/" }
   ],
   "About": {
     "p-text": "With the experience of 12 years, ARAJ is a brand creation & design studio rooted in INDIA.",
@@ -15,21 +16,21 @@
   },
   "hero": {
     "images": [
-      "assets/img/index/slideshow1.jpg",
-      "assets/img/index/slideshow2.jpg",
-      "assets/img/index/slideshow3.jpg",
-      "assets/img/index/slideshow4.jpg",
-      "assets/img/index/slideshow5.jpg"
+      "../../assets/img/index/slideshow1.jpg",
+      "../../assets/img/index/slideshow2.jpg",
+      "../../assets/img/index/slideshow3.jpg",
+      "../../assets/img/index/slideshow4.jpg",
+      "../../assets/img/index/slideshow5.jpg"
     ]
   },
   "testimonials": {
     "images": [
-      "assets/img/testimonials/testimonials-1.jpg",
-      "assets/img/testimonials/testimonials-2.jpg",
-      "assets/img/testimonials/testimonials-3.jpg",
-      "assets/img/testimonials/testimonials-4.jpg",
-      "assets/img/testimonials/testimonials-5.jpg",
-      "assets/img/testimonials/testimonials-1.jpg"
+      "../../assets/img/testimonials/testimonials-1.jpg",
+      "../../assets/img/testimonials/testimonials-2.jpg",
+      "../../assets/img/testimonials/testimonials-3.jpg",
+      "../../assets/img/testimonials/testimonials-4.jpg",
+      "../../assets/img/testimonials/testimonials-5.jpg",
+      "../../assets/img/testimonials/testimonials-1.jpg"
     ]
   },
   "socials": [
