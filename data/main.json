@@ -16,21 +16,21 @@
   },
   "hero": {
     "images": [
-      "assets/img/index/slideshow1.jpg",
-      "assets/img/index/slideshow2.jpg",
-      "assets/img/index/slideshow3.jpg",
-      "assets/img/index/slideshow4.jpg",
-      "assets/img/index/slideshow5.jpg"
+      "../../assets/img/index/slideshow1.jpg",
+      "../../assets/img/index/slideshow2.jpg",
+      "../../assets/img/index/slideshow3.jpg",
+      "../../assets/img/index/slideshow4.jpg",
+      "../../assets/img/index/slideshow5.jpg"
     ]
   },
   "testimonials": {
     "images": [
-      "assets/img/testimonials/testimonials-1.jpg",
-      "assets/img/testimonials/testimonials-2.jpg",
-      "assets/img/testimonials/testimonials-3.jpg",
-      "assets/img/testimonials/testimonials-4.jpg",
-      "assets/img/testimonials/testimonials-5.jpg",
-      "assets/img/testimonials/testimonials-1.jpg"
+      "../../assets/img/testimonials/testimonials-1.jpg",
+      "../../assets/img/testimonials/testimonials-2.jpg",
+      "../../assets/img/testimonials/testimonials-3.jpg",
+      "../../assets/img/testimonials/testimonials-4.jpg",
+      "../../assets/img/testimonials/testimonials-5.jpg",
+      "../../assets/img/testimonials/testimonials-1.jpg"
     ]
   },
   "socials": [
