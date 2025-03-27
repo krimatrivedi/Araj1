@@ -7,8 +7,7 @@ fetch("../../data/main.json")
     if (logoLink) {
       logoLink.setAttribute("href", data.home_link);
     }
-    const currentPage = window.location.pathname.split("/").pop(); 
-
+    const currentPage = window.location.pathname
     function createNavItem(item) {
       let listItem = document.createElement("li");
       let link = document.createElement("a");

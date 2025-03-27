@@ -122,7 +122,7 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  // new PureCounter();W
 
   /**
    * Init swiper sliders
@@ -146,9 +146,9 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init isotope layout and filters
